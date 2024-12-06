@@ -6,6 +6,8 @@ mod export;
 mod responder;
 mod tera_utility;
 
+pub use rocket;
+pub use rocket_dyn_templates;
 pub use tera_utility::{add_builtin, TemplateToContent, ErrToTeraError};
 pub use builder::WebBackendBuilder;
 pub use export::{RouteExport, RouteExportList};
