@@ -1,0 +1,19 @@
+[package]
+name = "qwreey-rocket"
+version = "0.1.0"
+edition = "2021"
+authors = ["Qwreey <me@qwreey.moe>"]
+description = "Qwreey's rocket wrapper"
+repository = "https://github.com/qwreey/qwreey-rocket"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+rocket = { version = "0.5.1", features = ["json"] }
+rocket_dyn_templates = { version = "0.2.0", features = ["tera"] }
+qwreey-utility-rs = { version = "0.1.2", path = "../qwreey-utility-rs-ignoreme" }
+serde_json = "1.0.133"
+# qwreey-utility-rs = "0.1.2"
